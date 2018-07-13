@@ -1,0 +1,44 @@
+{
+  "name": "redux-future2",
+  "version": "0.0.0",
+  "description": "Future middleware for redux",
+  "main": "index.js",
+  "repository": "git@github.com:articulate/redux-future2.git",
+  "author": "articulate",
+  "license": "MIT",
+  "keywords": [
+    "async",
+    "future",
+    "middleware",
+    "monad",
+    "promise",
+    "redux",
+    "redux-middleware",
+    "task"
+  ],
+  "nyc": {
+    "check-coverage": true,
+    "branches": 100,
+    "functions": 100,
+    "lines": 100,
+    "statements": 100
+  },
+  "scripts": {
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "lint": "eslint .",
+    "postversion": "git push --tags origin master",
+    "preversion": "git checkout master",
+    "test": "mocha test.js --reporter=dot",
+    "test:ci": "yarn run lint && yarn run test:coverage && yarn run coverage",
+    "test:coverage": "nyc yarn run test"
+  },
+  "devDependencies": {
+    "@articulate/spy": "^0.0.1",
+    "chai": "^4.1.2",
+    "coveralls": "^3.0.2",
+    "crocks": "^0.9.4",
+    "eslint": "^5.1.0",
+    "mocha": "^5.2.0",
+    "nyc": "^12.0.2"
+  }
+}
