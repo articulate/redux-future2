@@ -1,6 +1,6 @@
 {
   "name": "redux-future2",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Future middleware for redux",
   "main": "index.js",
   "repository": "git@github.com:articulate/redux-future2.git",
