@@ -13,7 +13,7 @@ Future middleware for redux.
 future : Store -> Function -> Action -> a
 ```
 
-Redux middleware to dispatch actions that are Futures, also known as Asyncs or Tasks.  Popular libraries providing Future implementations include [`crocks`](https://github.com/evilsoft/crocks) and [`Fluture`](https://github.com/fluture-js/Fluture).
+Redux middleware to dispatch actions that are Futures, also known as Asyncs or Tasks.  Popular libraries providing Future implementations include [`crocks`](https://github.com/evilsoft/crocks) and [`Fluture`](https://github.com/fluture-js/Fluture) up to v11.
 
 If any action has a property called `fork` that is a function, the action is assumed to be a Future.
 
